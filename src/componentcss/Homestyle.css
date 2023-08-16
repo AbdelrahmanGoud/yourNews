@@ -1,0 +1,158 @@
+.sec-1
+{
+  height: 120vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column !important;    
+  overflow: hidden;
+
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-20deg, #0d6efd 50%, #ffffff 50%);
+  bottom:0;
+  left:-100%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+.content h1
+{
+  font-size: 60px;    
+  font-weight: 800;    
+}
+.content p
+{
+  font-size: 20px;
+  font-weight: bold;        
+}
+.lin-sec-1
+{
+  text-decoration: none !important;     
+}
+.icon-sec-1
+{
+  font-size: 40px;
+  color: white;
+  margin-top: 50px;
+}
+
+.sec-2
+{
+  background-color: white;
+  height: 100%;
+  overflow: hidden;
+  padding: 50px 0;
+
+}
+.sec-2 h2
+{
+    font-size: 40px;      
+}
+.sec-2p
+{
+  line-height: 2.5rem;  
+  font-weight: bold;      
+}
+
+.sec-3
+{
+  height: 50vh;
+  overflow: hidden;
+  background-color: #fff;  
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+
+        
+        .text-container h1{
+          margin: 0;
+          font-size: 150px;
+          color: rgba(225,225,225, .01);
+          background-image: url("../image/sec-3-1.jpg");
+          background-repeat: repeat;
+          background-clip:text;
+          animation: animate 15s ease-in-out infinite;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 900;
+        }
+        
+          @keyframes animate {
+            0%, 100% {
+              background-position: left top;
+            }
+            25%{
+              background-position: right bottom;
+             }
+            50% {
+              background-position: left bottom;
+            }
+            75% {
+              background-position: right top;
+            }   
+        }
+
+.sec-4
+{
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+}        
+
+.sport-tit h2
+{
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.crad-eg
+{
+  border: none !important;
+  font-weight: bold;
+}
+.sec-5
+{
+   height: 100vh;
+
+}
+.carousel
+{
+  width: 40%;
+}
+.other-cat button
+{
+  font-weight: bold;
+}
+.nav-link
+{
+  text-decoration: none;
+  color: black !important;
+  font-weight: bold !important;
+}

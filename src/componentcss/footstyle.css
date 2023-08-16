@@ -1,0 +1,38 @@
+.foot
+{
+  background-color: #011f44;
+  height: 30vh;
+  overflow: hidden;        
+}
+.desc
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;       
+}
+
+.icon-foot i
+{
+  color: white;
+  font-size: 20px;         
+}
+.rights
+{
+   font-weight: bold;    
+}
+
+@media screen and (max-width:991px)
+{
+  .desc
+{
+   display: flex;
+   justify-content:center;
+   align-items: center;    
+   flex-direction: column !important;   
+}
+.rights
+{
+   font-weight: bold;    
+   padding-bottom: 20px;   
+}
+}
