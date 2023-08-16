@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './component/Home';
+import Navpages from './component/Navpages';
+import './componentcss/Homestyle.css';
+import './componentcss/footstyle.css';
+import Foot from './component/Foot';
+import Us from './component/Us';
+import Saudi from './component/Saudi';
+import Uae from './component/Uae';
+import Cars from './component/Cars';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">  
+    <BrowserRouter>
+    <Navpages/> 
+    <Routes>
+    <Route path='/' element={<Home/>}></Route>
+    <Route path='Us' element={<Us/>}/>
+    <Route path='Saudi' element={<Saudi/>}/>
+    <Route path='Uae' element={<Uae/>}/>
+    <Route path='Cars' element={<Cars/>}/>
+    </Routes>
+    <Foot/>
+    </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
+
