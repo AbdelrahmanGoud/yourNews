@@ -8,7 +8,7 @@ function Footp()
      <footer className='foot pt-5'>
      <div className="foot-desc ">
      <div className='im-foot text-center'>
-     <img src={imgfoot} alt='image' className='img-fluid'></img>
+     <img src={imgfoot} alt='img' className='img-fluid'/>
      </div>
       <div className='desc'>
       <div className='icon-foot pl-3 pt-3'>

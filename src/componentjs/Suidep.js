@@ -19,7 +19,7 @@ function Suidep()
               console.log(sanews)
             };
             fetchData();
-          }, [categoryn]);
+          },[categoryn]);
         
           const hendelcat = (cats) => {
             setcategoryn(cats);
