@@ -9,7 +9,7 @@ import logoim from '../image/yournews-low-resolution-logo-color-on-transparent-b
 import logo2 from '../image/yournews-low-resolution-logo-color-on-transparent-background.png';
 import { Link } from 'react-router-dom';
 
-function Navpages() {
+function Navpage() {
 
   return (
     <>
@@ -64,4 +64,4 @@ function Navpages() {
   );
 }
 
-export default Navpages;
+export default Navpage;

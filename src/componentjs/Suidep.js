@@ -2,7 +2,7 @@ import '../componentcss/usStyle.css'
 import '../componentcss/Homestyle.css';
 import Card from 'react-bootstrap/Card';
 import { useEffect, useState } from 'react';
-function Saudi()
+function Suidep()
 {
           const [sanews, setsanews] = useState([]);
           const [categoryn, setcategoryn] = useState("");
@@ -85,4 +85,4 @@ function Saudi()
          </>    
    )       
 }
-export default Saudi;
+export default Suidep;

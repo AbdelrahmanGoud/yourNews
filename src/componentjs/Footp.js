@@ -1,5 +1,5 @@
 import imgfoot from '../image/logowhite.png';
-function Foot()
+function Footp()
 { 
   let date =new Date()
   let displaydate=date.getFullYear()        
@@ -29,4 +29,4 @@ function Foot()
      </>     
   )        
 }
-export default Foot;
+export default Footp;

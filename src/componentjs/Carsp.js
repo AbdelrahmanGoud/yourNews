@@ -3,7 +3,7 @@ import '../componentcss/Homestyle.css';
 import Card from 'react-bootstrap/Card';
 
 import { useEffect, useState } from 'react';
-function Cars()
+function Carsp()
 {  
           const [crnews, setcrnews] = useState([]);
           const [categoryn, setcategoryn] = useState("");
@@ -100,4 +100,4 @@ function Cars()
      </>     
    )       
 }
-export default Cars;
+export default Carsp;

@@ -3,7 +3,7 @@ import '../componentcss/Homestyle.css';
 import Card from 'react-bootstrap/Card';
 
 import { useEffect, useState } from 'react';
-function Us()
+function Usp()
 {  
           const [usnews, setusnews] = useState([]);
           const [categoryn, setcategoryn] = useState("");
@@ -86,4 +86,4 @@ function Us()
      </>     
    )       
 }
-export default Us
+export default Usp;

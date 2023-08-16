@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import '../componentcss/usStyle.css'
 import WOW from 'wowjs';
-function Home(){
+function Homep(){
  
   const [egnews,setegnews] = useState([]);
   const [categoryn, setcategoryn] = useState("");
@@ -102,4 +102,4 @@ function Home(){
   );
 }
 
-export default Home;
+export default Homep;

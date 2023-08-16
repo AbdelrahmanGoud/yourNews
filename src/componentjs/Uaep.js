@@ -2,7 +2,7 @@ import '../componentcss/usStyle.css'
 import '../componentcss/Homestyle.css';
 import Card from 'react-bootstrap/Card';
 import { useEffect, useState } from 'react';
-function Uae()
+function Uaep()
 {
           const [uanews, setuanews] = useState([]);
           const [categoryn, setcategoryn] = useState("");
@@ -84,4 +84,4 @@ function Uae()
          </>    
    )       
 }
-export default Uae;
+export default Uaep;
