@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import { useEffect, useState } from 'react';
 function Suidep()
 {
-          const [sanews, setsanews] = useState([]);
+          const [suinews, setsuinews] = useState([]);
           const [categoryn, setcategoryn] = useState("");
         
           useEffect(() => {
@@ -12,11 +12,10 @@ function Suidep()
               try {
                 const response = await fetch(`https://newsapi.org/v2/top-headlines?country=sa&category=${categoryn}&apiKey=bb527eb5ac6a4b42a17654fe3f8d4d59`);
                 const data = await response.json();
-                setsanews(data.articles);
+                setsuinews(data.articles);
               } catch (error) {
                 console.log(error);
               }
-              console.log(sanews)
             };
             fetchData();
           },[categoryn]);
@@ -55,7 +54,7 @@ function Suidep()
                 <button className="btn m-3" onClick={() => hendelcat("technology")}>technology</button>
               </div>    
          <div className='row'>
-        {sanews.map((sa)=>(
+        {suinews.map((sa)=>(
          <div className='col-lg-3 col-md-6 mb-3' key={sa.url}>
          <div className='us-item'>
          <Card style={{ width: '18rem' }} className="crad-eg pl-3">
