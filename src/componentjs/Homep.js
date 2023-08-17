@@ -1,15 +1,13 @@
 import { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import '../componentcss/usStyle.css'
-import WOW from 'wowjs';
 function Homep(){
  
   const [egnews,setegnews] = useState([]);
   const [categoryn, setcategoryn] = useState("");
 
   useEffect(() => {
-    const wow = new WOW.WOW();
-    wow.init();
+  
     const fetchData = async () => {
       try {
         const response = await fetch(`https://newsapi.org/v2/top-headlines?country=eg&category=${categoryn}&apiKey=bb527eb5ac6a4b42a17654fe3f8d4d59`);
@@ -73,7 +71,7 @@ function Homep(){
           </div>
           <div className="row">
             {egnews.map((eg)=>(
-              <div className="col-lg-3 col-md-6 mb-3" key={eg.id}>
+              <div className="col-lg-3 col-md-6 mb-3" key={eg.url}>
                 <div className="sec-4-item">
                   <Card style={{width: '18rem' }} className="crad-eg pl-3">
                     <Card.Body>

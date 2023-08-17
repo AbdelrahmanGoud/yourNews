@@ -57,7 +57,7 @@ function Usp()
           </div>    
      <div className='row m-auto'>
     {usnews.map((us)=>(
-     <div className='col-lg-3 col-md-6 mb-3' key={us.id}>
+     <div className='col-lg-3 col-md-6 mb-3' key={us.url}>
      <div className='us-item'>
      <Card style={{ width: '18rem' }} className="crad-eg pl-3">
      <Card.Img variant="top" src={us.urlToImage} className='img-fluid' />

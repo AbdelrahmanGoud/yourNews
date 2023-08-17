@@ -55,7 +55,7 @@ function Uaep()
               </div>    
          <div className='row'>
         {uanews.map((sa)=>(
-         <div className='col-lg-3 col-md-6 mb-3' key={sa.id}>
+         <div className='col-lg-3 col-md-6 mb-3' key={sa.url}>
          <div className='us-item'>
          <Card style={{ width: '18rem' }} className="crad-eg pl-3">
          <Card.Img variant="top" src={sa.urlToImage} />

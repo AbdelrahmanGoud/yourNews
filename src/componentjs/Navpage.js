@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import logoim from '../image/yournews-low-resolution-logo-color-on-transparent-background.png';
 import logo2 from '../image/yournews-low-resolution-logo-color-on-transparent-background.png';
 import { Link } from 'react-router-dom';

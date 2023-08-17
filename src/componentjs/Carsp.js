@@ -71,7 +71,7 @@ function Carsp()
           </div>   
      <div className='row'>
     {crnews.map((crs)=>(
-     <div className='col-lg-3 col-md-6 mb-3' key={crs.id}>
+     <div className='col-lg-3 col-md-6 mb-3' key={crs.url}>
      <div className='us-item'>
      <Card style={{ width: '18rem' }} className="crad-eg pl-3" >
      <Card.Img variant="top" src={crs.urlToImage} />
